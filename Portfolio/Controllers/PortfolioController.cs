@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 using Portfolio.NewFolder;
@@ -9,6 +10,7 @@ namespace Portfolio.Controllers
 
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("ValidAzure")]
     public class PortfolioController : ControllerBase
     {
         private static List<PortfolioList> heroes = new List<PortfolioList>

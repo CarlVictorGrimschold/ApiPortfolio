@@ -4,12 +4,12 @@ using Microsoft.AspNetCore.Mvc;
 using Portfolio.NewFolder;
 
 
-namespace SuperHeroAPIDemo_G.Controllers
+namespace Portfolio.Controllers
 {
 
     [Route("api/[controller]")]
     [ApiController]
-    public class SuperHeroController : ControllerBase
+    public class PortfolioController : ControllerBase
     {
         private static List<PortfolioList> heroes = new List<PortfolioList>
         {
